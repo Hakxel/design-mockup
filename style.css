@@ -1,0 +1,336 @@
+/* General */
+
+body {
+  margin: 0%;
+  box-sizing: content-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.main {
+  background-image: url("images/blue1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+/* Header */
+
+.nav ul {
+  text-align: right;
+  color: gainsboro;
+  padding: 2em;
+}
+
+/* Hero */
+
+.hero-right {
+  display: flex;
+  max-height: 30em;
+  max-width: 45em;
+  justify-content: center;
+
+}
+
+.hero-right img {
+  max-width: 100%;
+  /* height: auto; */
+  max-height: 30em;
+
+}
+
+.hero-left {
+  justify-content: center;
+  align-content: flex-start;
+  height: 30em;
+  /* padding-top: 2em; */
+  
+}
+
+.hero-left > p {
+  color: darkgray;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.hero-left > h1 {
+  color: white;
+  font-size: 2em;
+  margin: 0%;  
+}
+
+.hero-left button {
+  margin-top: 2em;
+}
+
+.hero-left > button {
+  padding: 0.5em;
+  height: 4em;
+  width: 14em;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  border:none;
+}
+
+ .hero-middle {
+  display: flex;
+} 
+
+.hero-middle::after {
+  content: "";
+  display: block;
+  border-right: 1px solid green;
+  height: 14em;
+  width: 150vw;
+  background-color: white;
+  margin: -11em;
+  transform: rotate(-3deg);
+}
+
+.hero-bottom {
+  background-color: white;
+  padding-top: 2em;
+  margin-top: -8em;
+}
+
+.options {
+  padding: 1.5em;
+  max-width: 20%;
+  height: 10em;
+  color: lightslategray;
+  margin-top: 1em;
+  z-index: 2;
+}
+
+.options.middle {
+  border-left: 1px solid lightblue;
+  border-right: 1px solid lightblue;
+  /* height: 8em; */
+}
+
+.options h1 {
+ color: blue; 
+}
+
+.options h1 strong {
+  color: darkblue;
+}
+
+
+#features {
+  background-color: ghostwhite;
+  border: 1px solid lightblue;
+  max-width: 100vw;
+}
+
+#features.wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  height: 80vh;
+  max-width: 100vw;
+}
+
+
+#features h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2em;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.icon {
+  height: auto;
+  max-width: 5vw;  
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icon.first {
+  border: 2px solid green;
+}
+
+.icon.second {
+  border: 1px solid red;
+}
+
+.icon.third {
+  border: 1px solid magenta;
+}
+
+figure {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  
+}
+
+figure > img {
+  height: auto;
+  max-width: 80%;
+}
+
+.wrapper .feat-text {
+  height: 10em;
+  align-content: flex-start;
+}
+
+.feat-text strong {
+  color: green;
+}
+
+.feat-text p:first-child {
+  margin: 0%;
+}
+
+.feat-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+/* .feat-text:before {
+  content: "";
+  display: block;
+  border-right: 1px solid green;
+  height: 8em;
+  width: 3em;
+} */
+
+#trainers {
+  margin-top: 4em;
+}
+
+/* .trainers-wrapper {
+  height: 80vh;
+} */
+
+
+#trainers h1 {
+  color: blue;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* #trainers h1:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid lightblue;
+  padding-top: 1em;
+  max-width: 3em; */
+  
+  
+  .trainers-img {
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 6em;
+    margin-top: 6em;
+  }
+
+  .trainers-img > img {
+    max-height: auto;
+    max-width: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em; 
+  }
+
+  .trainers-stats {
+    background-image: url("images/blue1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 25em;
+    margin-top: 3em;
+  }
+
+  .trainers-stats .wrapper {
+    justify-content: space-evenly;
+  }
+
+  .stats {
+    display: flex;
+    height: 15em;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    color: white;    
+  }
+
+  .stats h3 {
+    font-size: 45px;
+  }
+
+  .stats p {
+    font-size: 20px;
+    color: darkgrey;
+  }
+
+
+  .trainers-stats button {
+    justify-self: center;
+    align-self: center;
+    height: 4em;
+    width: 14em;
+    color: white;
+    font-weight: bold;
+    background-color: darkblue;
+    border:none;
+  }
+
+  /* footer */
+
+  .footer {
+    background-color: black;
+    display: flex;
+    box-sizing: content-box;
+    padding: 5px;
+  }
+
+  .nav.bottom ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+  }
+  
+  .nav.bottom li {
+    margin-right: 4px;
+  }
+
+  .copyright {
+    display: flex;
+    color: gainsboro;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .copyright p {
+    margin: 0px;
+
+  }
